@@ -1,0 +1,5 @@
+Hello world!
+This is a simple test file.
+Hello again, hello one more time.
+No greeting here.
+HELLO in caps should not be replaced if s1 is "Hello".
