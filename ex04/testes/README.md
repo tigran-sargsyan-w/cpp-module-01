@@ -156,8 +156,8 @@ xxx
 File: `ex04/testes/test04_length.txt.replace`
 
 ```text
-Za
-xxx
+Zaa
+xyzxyzxyz
 ```
 
 Explanation:
@@ -186,7 +186,7 @@ File: `ex04/testes/test04_length.txt.replace`
 
 ```text
 aaaaa
-superXsuperXsuperX
+superXyzsuperXyzsuperXyz
 ```
 
 ---
