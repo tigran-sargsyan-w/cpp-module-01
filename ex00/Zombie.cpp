@@ -1,19 +1,31 @@
 #include "Zombie.hpp"
 #include <iostream>
 
-// Default constructor
+/**
+ * @brief Default constructor for the Zombie class.
+ */
 Zombie::Zombie()
 	: name("noname") {}
 
-// Constructor with name
+/**
+ * @brief Constructs a Zombie object with a given name.
+ * @param name The name of the zombie.
+ */
 Zombie::Zombie(const std::string &name)
 	: name(name) {}
 
-// Copy constructor
+/**
+ * @brief Constructs a Zombie by copying another Zombie.
+ * @param other The other Zombie to copy.
+ */
 Zombie::Zombie(const Zombie &other)
 	: name(other.name) {}
 
-// Copy assignment operator
+/**
+ * @brief Assigns another Zombie to this one.
+ * @param other The other Zombie to assign from.
+ * @return A reference to this Zombie.
+ */
 Zombie &Zombie::operator=(const Zombie &other)
 {
 	if (this != &other)
@@ -23,13 +35,17 @@ Zombie &Zombie::operator=(const Zombie &other)
 	return (*this);
 }
 
-// Destructor
+/**
+ * @brief Destroys the Zombie object.
+ */
 Zombie::~Zombie()
 {
 	std::cout << name << ": is destroyed" << std::endl;
 }
 
-// Announce method
+/**
+ * @brief Makes the zombie announce itself.
+ */
 void Zombie::announce() const
 {
 	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;

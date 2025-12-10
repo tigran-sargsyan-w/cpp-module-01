@@ -1,6 +1,10 @@
 #include <iostream>
 #include <string>
 
+/**
+ * @brief Main function to demonstrate pointers and references.
+ * @return 0 on success.
+ */
 int main()
 {
     std::string brain = "HI THIS IS BRAIN";

@@ -2,6 +2,10 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
+/**
+ * @brief Main function to demonstrate the use of HumanA and HumanB classes.
+ * @return 0 on success.
+ */
 int	main(void)
 {
 	{
