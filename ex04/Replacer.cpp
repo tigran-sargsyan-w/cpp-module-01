@@ -3,6 +3,12 @@
 #include <fstream>
 #include <sstream>
 
+/**
+ * @brief Constructs a Replacer object.
+ * @param fileName The name of the file to process.
+ * @param search The string to search for.
+ * @param replacement The string to replace with.
+ */
 Replacer::Replacer(const std::string &fileName,
                    const std::string &search,
                    const std::string &replacement)
@@ -10,11 +16,20 @@ Replacer::Replacer(const std::string &fileName,
       search(search),
       replacement(replacement) {}
 
+/**
+ * @brief Constructs a Replacer object by copying another Replacer.
+ * @param other The other Replacer object to copy.
+ */
 Replacer::Replacer(const Replacer &other)
     : fileName(other.fileName),
       search(other.search),
       replacement(other.replacement) {}
 
+/**
+ * @brief Assigns another Replacer object to this one.
+ * @param rhs The other Replacer object to assign from.
+ * @return A reference to this Replacer object.
+ */
 Replacer &Replacer::operator=(const Replacer &rhs)
 {
     if (this != &rhs)
@@ -26,8 +41,16 @@ Replacer &Replacer::operator=(const Replacer &rhs)
     return *this;
 }
 
+/**
+ * @brief Destroys the Replacer object.
+ */
 Replacer::~Replacer() {}
 
+/**
+ * @brief Reads the content of the input file.
+ * @param outContent A reference to a string where the file content will be stored.
+ * @return True on success, false on error.
+ */
 bool Replacer::readFile(std::string &outContent) const
 {
     std::ifstream infile;
@@ -52,6 +75,11 @@ bool Replacer::readFile(std::string &outContent) const
     return true;
 }
 
+/**
+ * @brief Writes the given content to the output file.
+ * @param content The content to write to the file.
+ * @return True on success, false on error.
+ */
 bool Replacer::writeFile(const std::string &content) const
 {
     std::ofstream outfile;
@@ -76,6 +104,13 @@ bool Replacer::writeFile(const std::string &content) const
     return true;
 }
 
+/**
+ * @brief Replaces all occurrences of a search string with a replacement string.
+ * @param text The text to perform the replacement on.
+ * @param search The string to search for.
+ * @param replacement The string to replace with.
+ * @return The modified string.
+ */
 std::string Replacer::replaceAll(const std::string &text,
                                  const std::string &search,
                                  const std::string &replacement)
@@ -98,6 +133,10 @@ std::string Replacer::replaceAll(const std::string &text,
     return result;
 }
 
+/**
+ * @brief Processes the file, replacing all occurrences of the search string.
+ * @return True on success, false on error.
+ */
 bool Replacer::process() const
 {
     if (search.empty())
