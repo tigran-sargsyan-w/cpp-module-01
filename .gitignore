@@ -4,7 +4,7 @@
 *.out
 
 ex00/zombie
-ex01/zombieHorde
+ex01/horde
 ex02/brain
 ex03/violence
 ex04/replacer
