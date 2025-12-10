@@ -1,6 +1,12 @@
 #include "Harl.hpp"
 #include <iostream>
 
+/**
+ * @brief Main function for the Harl program.
+ * @param argc The number of command-line arguments.
+ * @param argv An array of command-line arguments.
+ * @return 0 on success, 1 on error.
+ */
 int main(int argc, char** argv)
 {
     if (argc != 2)
