@@ -146,6 +146,10 @@ Write a program that:
 
 * Basic pointer and reference syntax
 * Differences between pointers and references
+* A reference is syntactic sugar with safety rules. It's like a "const pointer," which:
+  * Automatically dereferences (you don't need to write *).
+  * Prohibits NULL (the compiler will slap you if you try).
+  * Prohibits address changes (binding forever).
 * [Look how similar they are(pointers and references)](https://godbolt.org/z/8787dd8Ms) 
 * Understanding that a reference is essentially an alias to an existing object
 * Seeing how addresses line up in memory
