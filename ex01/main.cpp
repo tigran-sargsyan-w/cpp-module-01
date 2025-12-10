@@ -1,5 +1,9 @@
 #include "Zombie.hpp"
 
+/**
+ * @brief Main function to test the zombieHorde function.
+ * @return 0 on success, 1 on error.
+ */
 int main()
 {
     int count = 5;
