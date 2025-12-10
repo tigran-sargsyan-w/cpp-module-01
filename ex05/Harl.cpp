@@ -1,18 +1,36 @@
 #include "Harl.hpp"
 #include <iostream>
 
+/**
+ * @brief Default constructor for the Harl class.
+ */
 Harl::Harl() {}
 
+/**
+ * @brief Copy constructor for the Harl class.
+ * @param other The other Harl instance to copy from (unused).
+ */
 Harl::Harl(const Harl& other) { (void)other; }
 
+/**
+ * @brief Assignment operator for the Harl class.
+ * @param other The other Harl instance to assign from (unused).
+ * @return A reference to the current Harl instance.
+ */
 Harl& Harl::operator=(const Harl& other) 
 {
     (void)other;
     return *this;
 }
 
+/**
+ * @brief Destructor for the Harl class.
+ */
 Harl::~Harl() {}
 
+/**
+ * @brief Prints a debug message.
+ */
 void Harl::debug() 
 {
     std::cout
@@ -21,6 +39,9 @@ void Harl::debug()
         << RESET << std::endl;
 }
 
+/**
+ * @brief Prints an info message.
+ */
 void Harl::info()
 {
     std::cout
@@ -29,6 +50,9 @@ void Harl::info()
         << RESET << std::endl;
 }
 
+/**
+ * @brief Prints a warning message.
+ */
 void Harl::warning()
 {
     std::cout
@@ -37,6 +61,9 @@ void Harl::warning()
         << RESET << std::endl;
 }
 
+/**
+ * @brief Prints an error message.
+ */
 void Harl::error()
 {
     std::cout
@@ -45,6 +72,10 @@ void Harl::error()
         << RESET << std::endl;
 }
 
+/**
+ * @brief Calls a complaint method based on the level.
+ * @param level The complaint level (DEBUG, INFO, WARNING, ERROR).
+ */
 void Harl::complain(const std::string& level)
 {
     typedef void (Harl::*HarlMethod)();

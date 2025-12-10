@@ -1,5 +1,9 @@
 #include "Harl.hpp"
 
+/**
+ * @brief Main function to test the Harl class.
+ * @return 0 on success.
+ */
 int main() 
 {
     Harl harl;
