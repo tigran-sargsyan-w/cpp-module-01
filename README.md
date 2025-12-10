@@ -145,6 +145,8 @@ Write a program that:
 **Concepts practiced:**
 
 * Basic pointer and reference syntax
+* Differences between pointers and references
+* [Look how similar they are(pointers and references)](https://godbolt.org/z/8787dd8Ms) 
 * Understanding that a reference is essentially an alias to an existing object
 * Seeing how addresses line up in memory
 
