@@ -1,7 +1,10 @@
 # C++ Module 01 – Memory, References & Complaining Clients 🧠🧟‍♂️
 
-✅ **Status**: Completed – all exercises
-🏫 **School**: 42 – C++ Modules (Module 01)
+✅ **Status**: Completed – all exercises 
+
+🏫 **School**: 42 – C++ Modules (Module 01) 
+
+🏅 Score: 100/100
 
 > *Memory allocation, references, pointers to members and `switch` statements.*
 
